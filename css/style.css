@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+*, html, body,aside {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    box-sizing: border-box;
+}
+aside {
+    width: 400px;
+    height: auto;
+    
+}
+
+/*основное меню*/
+.main-menu {
+    width: 200px;
+    height: 100vh;
+    min-height: 600px;
+    float: left;
+}
+.menu {
+    width: 100%;
+    height: 16.6%;
+    background: grey;
+    text-align: center;
+    border: 4px solid white;
+    border-bottom: none;
+    padding: 10px;
+}
+.menu:nth-child(1) {background: lightgreen;}
+.menu:hover {background: lightgreen;}
+.menu img {
+    width: auto;
+    max-width: 180px;
+    height: 100%;
+}
+/*подменю*/
+.menu-tabs {
+    position: relative;
+    top: 0;
+    left: 200px;
+}
+.tabs {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    min-height: 600px;
+    display: none;
+}
+.item {
+    width: 100%;
+    height: 16.6%;
+    text-align: center;
+    border: 4px solid white;
+    border-bottom: none;
+    padding: 10px;
+    display: block; 
+    background: lightgreen;
+    border-left: lightgreen;
+}
+.item img {
+    width: auto;
+    max-width: 180px;
+    height: 100%;
+}
+/*активный класс*/
+.active {
+    /*background: lightgreen !important;*/
+    display: block !important; 
+}
+/*основной экран*/
+.content {
+    width: calc(100vw - 400px);
+    min-width: 800px;
+    height: 100vh;
+    min-height: 600px;
+    background: grey;
+    margin-left: 400px;
+    border: 4px solid white;
+    border-left: lightgreen;
+    position: relative;
+    overflow: hidden;
+}
+.dino-body {  
+    width: 750px; 
+    height: 100%; 
+    background: url(../image/body/1.png) no-repeat; 
+    background-size: 100%; 
+    position: absolute; 
+    top: 100px;
+    left: 70px; 
+    display: none;
+}
+.dino-eyes {  
+    width: 30px; 
+    height: 30px; 
+    background: url(../image/eyes/1.png) no-repeat; 
+    background-size: 100%; 
+    position: absolute; 
+    top: 110px;
+    left: 90px; 
+    display: none;
+}
+.dino-heat {  
+    width: 100px; 
+    height: 60px;
+    background: url(../image/heat/1.png) no-repeat; 
+    background-size: 100%; 
+    position: absolute; 
+    top: 55px;
+    left: 61px; 
+    display: none;
+}
+.dino-lips {  
+    width: 30px; 
+    height: 42px; 
+    background: url(../image/lips/1.png) no-repeat; 
+    background-size: 100%; 
+    position: absolute; 
+    top: 130px;
+    left: 68px; 
+    display: none;
+}
+.dino-spot {  
+    width: 750px; 
+    height: 100%; 
+    background: url(../image/spot/1.png) no-repeat; 
+    background-size: 100%; 
+    position: absolute; 
+    top: 123px;
+    left: 139px; 
+    display: none;
+}
+.dino-comb {  
+    width: 651px; 
+    height: 375px;
+    background: url(../image/comb/1.png) no-repeat; 
+    background-size: 100%; 
+    position: absolute; 
+    top: 113px;
+    left: 156px; 
+    display: none;
+}
+
